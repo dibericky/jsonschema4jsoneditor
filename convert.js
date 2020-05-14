@@ -20,6 +20,7 @@ function isChildADefinition (currentKey, obj) {
   return Object.keys(firstChild).includes('type')
 }
 
+// based on: https://github.com/hugomd/ref-replace
 export default function replaceRefs(obj)  {
   const searchStr = '$ref'
 
